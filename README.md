@@ -53,3 +53,5 @@ Specify what it takes to deploy your app.
 
 * To create a new project - $ ember new bustle-clone
 * To build 'about' route - $ ember generate route about
+
+* To build side navbar in ember try https://www.npmjs.com/package/ember-side-menu
