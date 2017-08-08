@@ -4,9 +4,10 @@
 
 <ul>
   {{#each model.articles as |article|}}
-    <li><img src={{article.image}} width=300px> {{article.heading}} {{article.starter}} - by {{article.author}}</li>
-  {{/each}}
+    <li><img src={{article.image}} width=300px> <h3>{{article.heading}}</h3> {{article.starter}}<br> - by <em>{{article.author}}</em> <br>{{article.date}}</li>
+  <br>{{/each}}
 </ul>
+{{new-article saveArticle="saveArticle"}}
 
 
 
