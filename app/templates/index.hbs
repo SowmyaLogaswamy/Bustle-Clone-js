@@ -1,0 +1,16 @@
+<h1> Welcome to Bustle </h1>
+
+<h2>Today's Top Stories</h2>
+
+<ul>
+  {{#each model.articles as |article|}}
+    <li>{{article.image}} {{article.heading}}
+      <br>
+      {{article.starter}} - by {{article.author}}</li>
+  {{/each}}
+</ul>
+
+
+{{#link-to 'index'}}Home |{{/link-to}}
+{{#link-to 'about'}}About |{{/link-to}}
+{{#link-to 'contact'}}Contact{{/link-to}}
