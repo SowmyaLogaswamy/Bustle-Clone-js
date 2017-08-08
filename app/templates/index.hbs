@@ -4,11 +4,10 @@
 
 <ul>
   {{#each model.articles as |article|}}
-    <li>{{article.image}} {{article.heading}}
-      <br>
-      {{article.starter}} - by {{article.author}}</li>
+    <li><img src={{article.image}} width=300px> {{article.heading}} {{article.starter}} - by {{article.author}}</li>
   {{/each}}
 </ul>
+
 
 
 {{#link-to 'index'}}Home |{{/link-to}}

@@ -1,0 +1,14 @@
+{
+  "name": "bustle-clone",
+  "description": "Small description for bustle-clone goes here",
+  "main": ".eslintrc.js",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
