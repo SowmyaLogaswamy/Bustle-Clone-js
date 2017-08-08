@@ -1,10 +1,11 @@
+
 <h1> Welcome to Bustle </h1>
 
 <h2>Today's Top Stories</h2>
 
 <ul>
   {{#each model.articles as |article|}}
-    <li><img src={{article.image}} width=300px> <h3>{{article.heading}}</h3> {{article.starter}}<br> - by <em>{{article.author}}</em> <br>{{article.date}}</li>
+    <li>{{#link-to 'article' article.id}}<img src={{article.image}} width=300px> <h3>{{article.heading}}</h3> {{/link-to}} {{article.starter}}<br> - by <em>{{article.author}}</em> <br>{{article.date}}</li>
   <br>{{/each}}
 </ul>
 {{new-article saveArticle="saveArticle"}}

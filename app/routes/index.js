@@ -14,4 +14,5 @@ saveArticle(params) {
      this.transitionTo('index');
    }
   }
+
 });
